@@ -16,6 +16,10 @@ set incsearch "搜索逐字符高亮
 set ignorecase "搜索时忽略大小写
 set cursorline "高亮当前行
 set showcmd "显示输入命令
+set autowrite
+
+" cindent
+set cindent
 
 set laststatus=2 "显示状态栏 (默认值为 1, 无法显示状态栏)
 
@@ -36,3 +40,12 @@ call plug#begin('~/.vim/plugged')
  Plug 'lfv89/vim-interestingwords'
 
 call plug#end()
+
+set path+=$PWD/**
+set nocp
+" close direction arrow
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
